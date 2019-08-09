@@ -1,16 +1,16 @@
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 // // ==> Tasks model
 const Task = mongoose.model('Task', {
   description: {
     type: String,
     trim: true,
-    required: true
+    required: true,
   },
   completed: {
     type: Boolean,
-    default: false
-  }
-})
+    default: false,
+  },
+});
 
-module.exports = Task
+module.exports = Task;
